@@ -1,0 +1,277 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+root {
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+a :active {
+  text-decoration: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: "Roboto", monospace, sans-serif;
+  box-sizing: border-box;
+}
+
+nav {
+  height: 80px;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar__left-side {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.navbar__right-side {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.navbar__right-side a {
+  color: rgb(39, 39, 39);
+}
+
+.navbar__right-side img {
+  height: 12px;
+  padding-left: 1rem;
+  border-left: 1px solid rgb(176, 176, 176);
+}
+
+main img {
+  width: 100%;
+}
+
+.main-heading h1 {
+  color: white;
+  line-height: 1.8rem;
+}
+.main-heading p {
+  color: white;
+  line-height: 1.8rem;
+}
+
+.main-heading span {
+  font-size: 0.7em;
+}
+
+.main-heading button {
+  width: 6rem;
+  height: 2rem;
+  background-color: rgba(1, 47, 158);
+  color: white;
+  border: none;
+}
+
+.text-before-heading {
+  text-align: center;
+  padding-top: 2rem;
+  color: gray;
+}
+
+.heading {
+  padding-top: 5px;
+  color: rgba(1, 47, 158);
+  text-align: center;
+}
+
+.four-blocks {
+  margin-top: 3rem;
+}
+
+.four-blocks img {
+  height: 5rem;
+}
+
+.two-blocks {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  margin-bottom: 3rem;
+}
+
+.block {
+  display: flex;
+  width: 22rem;
+  gap: 2rem;
+  color: #00004d;
+}
+
+.block h4 {
+  margin-bottom: 0.5rem;
+  font-weight: normal;
+}
+
+.destinations {
+  background-color: rgba(1, 47, 158);
+  padding-bottom: 3rem;
+}
+.destinations img {
+  width: 15rem;
+}
+
+.cities-and-cities-text-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+}
+
+#cities-text {
+  color: white;
+  padding-top: 3rem;
+  margin-bottom: 1rem;
+}
+.cities {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+.cities h2 {
+  padding-top: 1.4rem;
+  padding-left: 2rem;
+  color: rgba(18, 46, 99);
+}
+.cities p {
+  margin-left: 2rem;
+  margin-bottom: 2rem;
+  color: rgba(18, 46, 99);
+}
+.cities a {
+  padding-left: 2rem;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: rgba(1, 47, 158);
+}
+
+.cities div {
+  width: 15rem;
+  background-color: white;
+}
+/* Let us inspire you */
+.inspire-you {
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.inspire-you p {
+  color: blue;
+}
+
+.inspire-you a {
+  text-decoration: dashed;
+}
+
+/* Services */
+
+.services {
+  background-color: rgba(2, 31, 89);
+  padding-bottom: 2rem;
+}
+
+.services__text-before-heading {
+  padding-top: 3rem;
+  justify-self: center;
+  color: rgba(172, 179, 195);
+}
+
+.services__heading {
+  color: rgba(56, 188, 254);
+  justify-self: center;
+  margin-bottom: 2rem;
+  font-size: 1.7rem;
+}
+
+.services__text {
+  width: 30rem;
+  justify-self: center;
+  text-align: center;
+  color: rgba(172, 179, 195);
+  margin-bottom: 2rem;
+}
+.wrapper {
+  width: 70%;
+  justify-self: center;
+}
+.services__link {
+  text-align: end;
+}
+.services__link a {
+  color: rgba(44, 156, 220);
+  border-bottom: 1px dashed rgba(56, 188, 254);
+}
+
+.services__regular {
+  margin-top: 1rem;
+  background-color: white;
+  height: 60px;
+  justify-self: center;
+  width: 100%;
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* last div */
+.last-div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 0rem;
+  background-color: rgba(1, 47, 158);
+}
+.last-div__left-side {
+  display: flex;
+}
+.last-div__left-side p {
+  color: white;
+  padding: 0rem 6rem 0rem 2rem;
+}
+
+.last-div__right-side {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.footer-logo {
+  height: 4rem;
+  fill: white;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 0.5rem solid rgba(56, 189, 255);
+  padding: 2rem 0;
+}
+
+footer img {
+  height: 1rem;
+}
+
+.footer-left-side {
+  display: flex;
+  gap: 1rem;
+  padding-left: 3rem;
+}
+
+.footer-right-side {
+  display: flex;
+  gap: 1rem;
+  padding-right: 2rem;
+}
+
+.footer-right-side a {
+  color: rgb(100, 100, 100);
+}
