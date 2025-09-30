@@ -4,48 +4,73 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+
     <title>Green Earth</title>
   </head>
   <body>
     <!-- start navbar -->
     <nav class="navbar">
-      <div class="navbar__left-side">
-        <img src="images/logo.png" alt="Logo-Green-Earth" />
-        <a href="#">Info</a>
-        <a href="#">About us</a>
-        <a href="#">Contact</a>
-      </div>
-      <div class="navbar__right-side">
-        <a href="#">LOGIN</a>
-        <img src="images/flag.png" alt="Flag" />
-        <a href="#">EN - UK (£)</a>
+      <a href="#"
+        ><img src="images/logo.png" alt="Logo-Green-Earth" id="nav-logo"
+      /></a>
+      <div class="navbar__path-login">
+        <div class="navbar__path-login__path">
+          <a href="#">Info</a>
+          <a href="#">About us</a>
+          <a href="#">Contact</a>
+        </div>
+        <div class="navbar__path-login__login">
+          <a href="#">LOGIN</a>
+          <img
+            src="images/flag.png"
+            alt="Flag"
+            class="navbar__path-login__login__img"
+          />
+          <a href="#" class="uk-t-d">EN - UK (£)</a>
+          <a href="#" class="uk-m">(£)</a>
+        </div>
       </div>
     </nav>
     <!-- end navbar -->
 
     <!-- start main -->
-    <main>
-      <img src="images/img1.jpg" alt="Background-Slider" />
-      <!-- <div class="main-heading">
+    <main class="hero">
+      <div class="hero__main-text">
         <h1>
           Enjoy our hot <br />
           summer deals
         </h1>
-        <p>from £69<span>.50</span></p>
-        <button>Book now!</button>
-      </div> -->
+        <p class="hero_main-text__price">
+          from £69<span class="hero__main-text__price__sub-text">.50</span>
+        </p>
+        <button class="hero__main-text__btn">Book now!</button>
+      </div>
+      <div class="hero__slider">
+        <button class="hero__slider__btn">&larr;</button>
+        <button class="hero__slider__btn">&rarr;</button>
+      </div>
     </main>
     <!-- end main -->
+
+    <!-- FLY SMART -->
     <section>
       <div>
         <p class="text-before-heading">LOW COST DOESN'T MEAN CHEAP</p>
       </div>
       <div>
-        <h1 class="heading">Fly smart, fly with Green Earth</h1>
+        <h1 class="fly-smart-title">Fly smart, fly with Green Earth</h1>
+        <h1 class="fly-smart-title-hidden">
+          Fly smart,<br />
+          fly with Green Earth
+        </h1>
       </div>
-      <div class="four-blocks">
-        <div class="two-blocks">
-          <div class="block">
+      <div class="box-wrapper">
+        <div class="row-wrapper">
+          <div class="box">
             <img src="images/seat.png" alt="" />
             <div>
               <h4>Reclinable seats</h4>
@@ -55,7 +80,7 @@
               </p>
             </div>
           </div>
-          <div class="block">
+          <div class="box">
             <img src="images/shoe.png" alt="" />
             <div>
               <h4>Plenty of legroom</h4>
@@ -66,8 +91,8 @@
             </div>
           </div>
         </div>
-        <div class="two-blocks">
-          <div class="block">
+        <div class="row-wrapper">
+          <div class="box">
             <img src="images/cabin.png" alt="" />
             <div>
               <h4>Free cabin luggage</h4>
@@ -77,10 +102,10 @@
               </p>
             </div>
           </div>
-          <div class="block">
+          <div class="box">
             <img src="images/smile.png" alt="" />
             <div>
-              <h4>Friendly</h4>
+              <h4>Friendly crew</h4>
               <p>
                 Lorem ipsum dolor sit amet, consectetur ipisicing elit, sed do
                 eiusod tempor inciunt ut labore et dolore magna aliqua.
@@ -90,46 +115,82 @@
         </div>
       </div>
     </section>
+
+    <!-- FLY SMART -->
+
     <!-- Cities -->
-    <div class="destinations">
+    <section class="destinations">
       <div class="cities-and-cities-text-wrapper">
-        <p id="cities-text">Showing our offers from</p>
+        <p class="cities-text">Showing our offers from</p>
+        <p class="cities-text-hidden">
+          Showing <br />
+          our offers from
+        </p>
         <div class="cities">
-          <div>
-            <img src="images/london.jpg" alt="London image" />
-            <h2>London</h2>
-            <p>from £59</p>
-            <a href="#">Book now </a>
-            <p></p>
+          <div class="cities__london-hamburg">
+            <div class="cities__box">
+              <div class="london">
+                <div class="london__banner"><h4>3h left at this rate</h4></div>
+                <div class="banner__bottom"></div>
+                <img
+                  src="images/london.jpg"
+                  alt="London image"
+                  class="cities__box__img"
+                />
+                <h2>London</h2>
+                <p>from £59</p>
+                <a href="#">Book now &#10095;</a>
+              </div>
+            </div>
+            <div class="cities__box">
+              <img
+                src="images/hamburg1.jpg"
+                alt="London image"
+                class="cities__box__img"
+              />
+              <h2>Hamburg</h2>
+              <p>from £79</p>
+              <a href="#">Book now &#10095;</a>
+            </div>
           </div>
-          <div>
-            <img src="images/hamburg1.jpg" alt="London image" />
-            <h2>Hamburg</h2>
-            <p>from £79</p>
-            <a href="#">Book now </a>
-          </div>
-          <div>
-            <img src="images/alicante1.jpg" alt="London image" />
-            <h2>Alicante</h2>
-            <p>from £89</p>
-            <a href="#">Book now </a>
-          </div>
-          <div>
-            <img src="images/milan1.jpg" alt="London image" />
-            <h2>Milano</h2>
-            <p>from £119</p>
-            <a href="#">Book now </a>
+          <div class="cities__alicante-milano">
+            <div class="cities__box">
+              <img
+                src="images/alicante1.jpg"
+                alt="London image"
+                class="cities__box__img"
+              />
+              <h2>Alicante</h2>
+              <p>from £89</p>
+              <a href="#">Book now &#10095;</a>
+            </div>
+            <div class="cities__box">
+              <img
+                src="images/milan1.jpg"
+                alt="London image"
+                class="cities__box__img"
+              />
+              <h2>Milano</h2>
+              <p>from £119</p>
+              <a href="#">Book now &#10095;</a>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
     <!--  Let us inspire you-->
     <div class="inspire-you">
-      <p>
-        Don't know where to go?
-        <a href="#"><strong> Let us inspire you</strong></a>
-      </p>
+      <p>Don't know where to go?&nbsp;</p>
+      <a href="" class="inspire-you__link"
+        >Let us inspire you
+        <span class="dashed-text">
+          &#9472; &#9472; &#9472; &#9472; &#9472; &#9472; &#9472; &#9472;
+          &#9472;
+          <!-- &ndash; &ndash; &ndash; &ndash; &ndash; &ndash; &ndash; &ndash; -->
+        </span></a
+      >
     </div>
+
     <!-- Let us inspire you -->
 
     <!-- Quality from the inside -->
@@ -139,6 +200,12 @@
         <p>Quality from the inside</p>
       </div>
       <div class="services__heading"><h2>Travel the way you want</h2></div>
+      <div class="services__heading-hidden">
+        <h2>
+          Travel the way <br />
+          you want
+        </h2>
+      </div>
       <div class="services__text">
         <p>
           Lorem ipsum dolor sit amet consectetur ipisicing elit, sed do eiusod
@@ -146,44 +213,235 @@
           veniam, quis nostrud exercitation ulnisi ut
         </p>
       </div>
+      <div class="services__text-hidden">
+        <p>
+          Lorem ipsum dolor sit amet consectetur ipisicing elit, sed do eiusod
+          tempor inciunt
+        </p>
+      </div>
       <div class="wrapper">
         <div class="services__link">
           <a href="#">View all services & upgrades</a>
         </div>
-        <div class="services__regular"></div>
+        <div class="services__regular">
+          <div class="upgrades">
+            <div class="upgrades__regular"><h2>Regular</h2></div>
+            <div class="upgrades__plus"><h2>Plus</h2></div>
+            <div class="upgrades__premium"><h2>Premium</h2></div>
+          </div>
+          <div class="content">
+            <div class="content-img"><img src="images/child.jpg" alt="" /></div>
+            <div class="middle-text">
+              <div>
+                <i class="fa-solid fa-check fa-2xl" style="color: #012e9e"></i>
+                <p class="blue-text">Reclinable seats</p>
+              </div>
+              <div>
+                <i class="fa-solid fa-check fa-2xl" style="color: #012e9e"></i>
+                <p class="blue-text">1 Hand luggage</p>
+              </div>
+              <div>
+                <i class="fa-solid fa-check fa-2xl" style="color: #012e9e"></i>
+                <p class="blue-text">Extra leg room</p>
+              </div>
+            </div>
+            <div class="right-text">
+              <div>
+                <i
+                  class="fa-solid fa-dollar-sign fa-2xl"
+                  style="color: #e5e5e5"
+                ></i>
+                <p class="gray-text">Extra cabin luggage</p>
+              </div>
+              <div>
+                <i
+                  class="fa-solid fa-dollar-sign fa-2xl"
+                  style="color: #e5e5e5"
+                ></i>
+                <p class="gray-text">Extra hold luggage</p>
+              </div>
+              <div>
+                <i
+                  class="fa-solid fa-dollar-sign fa-2xl"
+                  style="color: #e5e5e5"
+                ></i>
+                <p class="gray-text">Lounge access</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--  -->
+        <!-- START HIDDEN SERVICES -->
+        <!--  -->
+
+        <div class="upgrades-hidden">
+          <div class="upgrades__box">
+            <img src="images/child.jpg" alt="Child cain" />
+            <h2>Regular</h2>
+            <div>
+              <i class="fa-solid fa-check fa-2xl" style="color: #012e9e"></i>
+              <p class="blue-text">Reclinable seats</p>
+            </div>
+            <div>
+              <i class="fa-solid fa-check fa-2xl" style="color: #012e9e"></i>
+              <p class="blue-text">1 Hand luggage</p>
+            </div>
+            <div>
+              <i class="fa-solid fa-check fa-2xl" style="color: #012e9e"></i>
+              <p class="blue-text">Extra leg room</p>
+            </div>
+            <div>
+              <i
+                class="fa-solid fa-dollar-sign fa-2xl"
+                style="color: #e5e5e5"
+              ></i>
+              <p class="gray-text">Extra cabin luggage</p>
+            </div>
+            <div>
+              <i
+                class="fa-solid fa-dollar-sign fa-2xl"
+                style="color: #e5e5e5"
+              ></i>
+              <p class="gray-text">Extra hold luggage</p>
+            </div>
+            <div>
+              <i
+                class="fa-solid fa-dollar-sign fa-2xl"
+                style="color: #e5e5e5"
+              ></i>
+              <p class="gray-text">Lounge access</p>
+            </div>
+          </div>
+          <div class="upgrades__box">
+            <img src="images/child.jpg" alt="Child cain" />
+            <h2>Plus</h2>
+            <div>
+              <i class="fa-solid fa-check fa-2xl" style="color: #012e9e"></i>
+              <p class="blue-text">Reclinable seats</p>
+            </div>
+            <div>
+              <i class="fa-solid fa-check fa-2xl" style="color: #012e9e"></i>
+              <p class="blue-text">1 Hand luggage</p>
+            </div>
+            <div>
+              <i class="fa-solid fa-check fa-2xl" style="color: #012e9e"></i>
+              <p class="blue-text">Extra leg room</p>
+            </div>
+            <div>
+              <i
+                class="fa-solid fa-dollar-sign fa-2xl"
+                style="color: #e5e5e5"
+              ></i>
+              <p class="gray-text">Extra cabin luggage</p>
+            </div>
+            <div>
+              <i
+                class="fa-solid fa-dollar-sign fa-2xl"
+                style="color: #e5e5e5"
+              ></i>
+              <p class="gray-text">Extra hold luggage</p>
+            </div>
+            <div>
+              <i
+                class="fa-solid fa-dollar-sign fa-2xl"
+                style="color: #e5e5e5"
+              ></i>
+              <p class="gray-text">Lounge access</p>
+            </div>
+          </div>
+          <div class="upgrades__box">
+            <img src="images/child.jpg" alt="Child cain" />
+            <h2>Premium</h2>
+            <div>
+              <i class="fa-solid fa-check fa-2xl" style="color: #012e9e"></i>
+              <p class="blue-text">Reclinable seats</p>
+            </div>
+            <div>
+              <i class="fa-solid fa-check fa-2xl" style="color: #012e9e"></i>
+              <p class="blue-text">1 Hand luggage</p>
+            </div>
+            <div>
+              <i class="fa-solid fa-check fa-2xl" style="color: #012e9e"></i>
+              <p class="blue-text">Extra leg room</p>
+            </div>
+            <div>
+              <i
+                class="fa-solid fa-dollar-sign fa-2xl"
+                style="color: #e5e5e5"
+              ></i>
+              <p class="gray-text">Extra cabin luggage</p>
+            </div>
+            <div>
+              <i
+                class="fa-solid fa-dollar-sign fa-2xl"
+                style="color: #e5e5e5"
+              ></i>
+              <p class="gray-text">Extra hold luggage</p>
+            </div>
+            <div>
+              <i
+                class="fa-solid fa-dollar-sign fa-2xl"
+                style="color: #e5e5e5"
+              ></i>
+              <p class="gray-text">Lounge access</p>
+            </div>
+          </div>
+        </div>
+
+        <!--  -->
+        <!-- START HIDDEN SERVICES -->
+        <!--  -->
       </div>
     </section>
 
-    <!-- last div -->
-    <div class="last-div">
-      <div class="last-div__left-side">
-        <p>Subscribe to our</p>
-        <input type="mail" placeholder="Enter your email address" />
-        <input type="submit" value="Send>" />
-      </div>
-      <div class="last-div__right-side">
-        <p>Follow us</p>
-        <a href="#"
-          ><img src="images/facebook.svg" alt="Facebook" class="footer-logo"
-        /></a>
-        <a href="#"
-          ><img src="images/twitter.svg" alt="Twitter" class="footer-logo"
-        /></a>
-        <a href="#"
-          ><img src="images/instagram.svg" alt="Instagram" class="footer-logo"
-        /></a>
-      </div>
-    </div>
+    <!-- footer -->
     <footer>
-      <div class="footer-left-side">
-        <div><img src="images/mc.png" alt="" /></div>
-        <div><img src="images/visa.png" alt="" /></div>
-        <div><img src="images/amex.png" alt="" /></div>
-        <div><img src="images/pp.png" alt="" /></div>
+      <div class="mail-media">
+        <div class="mail">
+          <p>Subscribe to our</p>
+          <input
+            type="mail"
+            placeholder=" Enter your email address"
+            id="mail"
+          />
+          <input type="submit" value="Send >" />
+        </div>
+        <div class="mail-hidden">
+          <p>Subscribe to our newsletter</p>
+          <input
+            type="mail"
+            placeholder=" Enter your email address"
+            id="mail-hidden"
+          />
+          <input type="submit" value="Send" />
+        </div>
+        <div class="media">
+          <p>Follow us</p>
+          <i class="fa-brands fa-facebook fa-2xl"></i>
+          <i class="fa-brands fa-twitter fa-2xl"></i>
+          <i class="fa-brands fa-instagram fa-2xl"></i>
+        </div>
       </div>
-      <div class="footer-right-side">
-        <div><a href="#">Terms & Privacy</a></div>
-        <div><a href="#">Site Map</a></div>
+
+      <!--  -->
+      <div class="payment-privacy">
+        <div class="media-hidden">
+          <p>Follow us</p>
+          <i class="fa-brands fa-facebook fa-2xl"></i>
+          <i class="fa-brands fa-twitter fa-2xl"></i>
+          <i class="fa-brands fa-instagram fa-2xl"></i>
+        </div>
+        <div class="payment-services">
+          <div class="mc-pic"><img src="images/mc.png" alt="" /></div>
+          <div class="visa-amex"><img src="images/visa.png" alt="" /></div>
+          <div class="visa-amex"><img src="images/amex.png" alt="" /></div>
+          <div class="pp-pic"><img src="images/pp.png" alt="" /></div>
+        </div>
+        <div class="privacy-site-map">
+          <div><a href="#">Terms & Privacy</a></div>
+          <div><a href="#">Site Map</a></div>
+        </div>
       </div>
     </footer>
   </body>
