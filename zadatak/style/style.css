@@ -472,7 +472,7 @@ root {
   padding: 0rem 3rem 0rem 4rem;
   align-self: center;
 }
-input[type="mail"] {
+input[type="email"] {
   border: none;
   border-bottom: 1px solid white;
   background: transparent;
