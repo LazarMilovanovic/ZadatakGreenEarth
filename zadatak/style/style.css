@@ -1145,6 +1145,9 @@ input[type="submit"] {
 
     margin-bottom: 5rem;
   }
+  .media-hidden__social-tablet {
+    display: none;
+  }
 
   .media-hidden p {
     /* margin-bottom: 2rem; */
