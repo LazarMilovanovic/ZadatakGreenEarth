@@ -796,6 +796,7 @@ input[type="submit"] {
   .navbar {
     padding: 0;
     padding-right: 5%;
+    align-content: center;
   }
   .navbar__path-login {
     flex-direction: column;
@@ -808,8 +809,8 @@ input[type="submit"] {
     font-weight: bolder;
     gap: 0;
     justify-content: space-between;
-    font-size: clamp(1rem, 4vw, 1.5rem);
-    width: 300px;
+    font-size: 3vw;
+    /* width: 300px; */
   }
   .navbar__path-login__login {
     align-self: flex-end;
@@ -838,20 +839,23 @@ input[type="submit"] {
 
   .hero {
     padding-left: 4%;
-    font-size: 4vw;
+    font-size: 3.5vw;
     /* font-size: clamp(1rem, 2vw, 1.5rem); */
     align-items: flex-start;
-    padding-top: 3rem;
-    height: 50vh;
+    padding-top: 4rem;
+    height: 45vh;
     background-size: 100% 100%;
+    line-height: 6vw;
+    font-weight: bolder;
   }
   .hero__main-text__price__sub-text {
-    font-size: 2vw;
+    font-size: 1.5vw;
   }
   .hero__main-text__btn {
     width: 50%;
-    height: 3.5rem;
-    font-size: 1.3rem;
+    height: 3rem;
+    font-size: 3vw;
+    font-weight: bold;
   }
 
   .hero__slider {
@@ -859,7 +863,7 @@ input[type="submit"] {
     padding-bottom: 2rem;
   }
   .hero__slider__btn {
-    border: 0.1px solid white;
+    border: 0.1px solid rgba(255, 255, 255, 0.3);
   }
   /*  */
   /* END MAIN */
@@ -869,17 +873,17 @@ input[type="submit"] {
   /* START FLY SMART */
   /*  */
   .text-before-heading {
-    font-size: 2rem;
+    font-size: 1.4rem;
   }
   .fly-smart-title {
     display: none;
   }
   .fly-smart-title-hidden {
     display: block;
-    padding-top: 5px;
+    padding-top: 20px;
     color: rgba(1, 47, 158);
     text-align: center;
-    font-size: 4rem;
+    font-size: 9vw;
   }
   .row-wrapper {
     flex-direction: column;
@@ -890,11 +894,11 @@ input[type="submit"] {
   }
 
   .box {
-    font-size: clamp(1rem, 4vw, 2rem);
+    font-size: 3.6vw;
     width: 90%;
   }
   .box h4 {
-    font-size: clamp(1rem, 6vw, 2.5rem);
+    font-size: 4vw;
     /* font-size: 2.5rem; */
   }
 
@@ -917,8 +921,10 @@ input[type="submit"] {
   .cities-text-hidden {
     display: block;
     text-align: center;
-    font-size: 5rem;
+    font-size: 8vw;
     margin-bottom: 4rem;
+    padding-top: 7.5vh;
+    line-height: 6.5vh;
   }
   .cities-and-cities-text-wrapper {
     margin: 0 5%;
@@ -1030,6 +1036,7 @@ input[type="submit"] {
     margin-left: 5%;
     margin-right: 5%;
   }
+
   .upgrades__box {
     background-color: white;
     padding-bottom: 2rem;
@@ -1039,7 +1046,7 @@ input[type="submit"] {
   }
   .upgrades__box div {
     margin-left: 15%;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2%;
     padding: 0.3rem 0rem;
   }
   .upgrades__box img {
