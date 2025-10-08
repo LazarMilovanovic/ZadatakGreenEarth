@@ -286,7 +286,7 @@ root {
   height: 1rem;
   width: 1rem;
   transform: rotate(45deg);
-  top: 15%;
+  top: 43px;
   left: -0.32rem;
   z-index: -1;
 }
@@ -534,7 +534,7 @@ root {
 .mail p {
   color: white;
   align-self: center;
-  margin-right: 2rem;
+  margin-right: 3rem;
 }
 input[type="email"] {
   border: none;
@@ -586,34 +586,36 @@ input[type="submit"] {
 .payment-privacy {
   display: flex;
   justify-content: space-between;
+
   border-bottom: 0.3rem solid rgba(56, 189, 255);
   padding: 2rem 0;
 }
 .payment-services img {
-  height: 0.8rem;
+  height: 0.6rem;
 }
 
 .mc-pic img {
-  height: 1.6rem;
-  width: 2rem;
+  height: 1.2rem;
+  width: 1.5rem;
 }
 
 .pp-pic img {
-  height: 1.6rem;
-  width: 1.6rem;
+  height: 1.2rem;
+  width: 1rem;
 }
 
 .payment-services {
   display: flex;
-  gap: 0.5rem;
+
+  gap: 1rem;
   margin-left: 3%;
-  align-items: center;
 }
 
 .privacy-site-map {
   display: flex;
   gap: 1rem;
   padding-right: 2rem;
+  align-self: center;
 }
 
 .privacy-site-map a {
@@ -709,6 +711,12 @@ input[type="submit"] {
   }
   .box-wrapper {
     margin-top: 2rem;
+  }
+  .box-wrapper img {
+    height: 6rem;
+  }
+  .box {
+    width: 22.5rem;
   }
 
   /*  */
@@ -1122,12 +1130,12 @@ input[type="submit"] {
     font-size: 3.6rem;
   }
   .london__banner {
-    font-size: 2.5rem;
+    font-size: clamp(1.5rem, 6vw, 2.5rem);
     width: 70%;
     padding: 7px 0px;
   }
   .banner__bottom {
-    top: 10%;
+    top: 11%;
   }
 
   /*  */
