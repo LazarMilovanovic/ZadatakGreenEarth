@@ -79,6 +79,10 @@ nav a {
 /* END NAV */
 
 /* START MAIN */
+/* main {
+  max-width: 1600px;
+} */
+
 .hero {
   display: flex;
   background: url(../images/img1.jpg) center center/cover;
@@ -771,7 +775,7 @@ input[type="submit"] {
   /* END CITIES */
   /*  */
   .inspire-you {
-    padding: 4rem 3%;
+    padding: 3rem 3%;
     font-size: 1.7rem;
   }
   .inspire-you__link {
