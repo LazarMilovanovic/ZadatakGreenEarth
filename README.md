@@ -1,2 +1,2 @@
 Live demo
-https://lazarmilovanovic.github.io/ZadatakGreenEarth/
+https://lazarmilovanovic.github.io/GreenEarth/
